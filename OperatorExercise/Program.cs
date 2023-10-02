@@ -13,6 +13,21 @@
             if (a  == 17 && b == 4) 
 
             Console.WriteLine($"{a}/{b} is {quotient} remainder {remainder}");
+
+            Console.WriteLine("What is the Radius of your circle?");
+            var radius = double.Parse(Console.ReadLine());
+
+            Console.WriteLine($"The area of a circle with radius {radius} is {AreaOfCircle(radius)}");
+            Console.WriteLine();    
+            Console.WriteLine("Press any key to continue...");
+
+            Console.ReadLine();
+        }
+        public static double AreaOfCircle(double radius)
+        {
+            var area = Math.PI * radius * radius;
+
+            return area;
         }
     }
 }
